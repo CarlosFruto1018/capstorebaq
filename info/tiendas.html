@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras tiendas</title>
+    <link rel="stylesheet" href="../css/tiendas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+</head>
+<body>
+    <div id="header"></div>
+    <div class="tiendas">
+        <h1>Nuestras tiendas</h1>
+        
+        <p>En CapStore, queremos estar siempre cerca de ti. Contamos con varias tiendas físicas en distintas ciudades de Colombia para que disfrutes de una experiencia de compra personalizada y encuentres los mejores productos en gorras y accesorios.</p>
+        <h2>Encuentra nuestras tiendas en:</h2>
+        <ul>
+            <li><i class="fas fa-map-marker-alt"></i>Bogotá - Centro Comercial Gran Estación, Local 205</<li>
+            <li><i class="fas fa-map-marker-alt"></i>Medellín - Centro Comercial El Tesoro, Piso 2, Local 120</<li>
+            <li><i class="fas fa-map-marker-alt"></i>Cali - Centro Comercial Chipichape, Local 35B</<li>
+            <li><i class="fas fa-map-marker-alt"></i>Barranquilla - Centro Comercial Viva Barranquilla, Local 87</<li>
+            <li><i class="fas fa-map-marker-alt"></i>Cartagena - Centro Comercial La Serrezuela, Local 12</<li>
+            <li><i class="fas fa-map-marker-alt"></i>Bucaramanga - Centro Comercial Cacique, Local 45</<li>
+            <li><i class="fas fa-map-marker-alt"></i>Pereira - Centro Comercial Parque Arboleda, Local 78</<li>
+        </ul>
+        <p>En cada una de nuestras tiendas, encontrarás un equipo dispuesto a asesorarte y ayudarte a elegir la mejor opción para tu estilo. ¡Visítanos y descubre nuestra colección exclusiva!</p>
+        <h2>Para más información, contáctanos al correo:</h2>
+        <p>atencionalcliente@capstore.com o llámanos al +57 320 456 7890.</p>
+    </div>
+
+    
+
+    <div id="footer"></div>
+    <script>
+        document.getElementById("header").innerHTML = fetch('/E-commerce_Gorras/pages/header.html').then(res => res.text()).then(data => document.getElementById("header").innerHTML = data);
+        document.getElementById("footer").innerHTML = fetch('/E-commerce_Gorras/pages/footer.html').then(res => res.text()).then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+</body>
+</html>

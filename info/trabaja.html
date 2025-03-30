@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja con nosotros</title>
+    <link rel="stylesheet" href="../css/trabaja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+</head>
+<body>
+    <div id="header"></div>
+    <div class="Trabaja">
+        <h1>Trabaja con Nosotros</h1>
+        <p>¿Te apasiona la moda y quieres formar parte de un equipo dinámico y en crecimiento? En CapStore, siempre estamos en busca de personas talentosas, creativas y con ganas de aprender para unirse a nuestra familia.</p>
+        <h2>¿Por qué trabajar con nosotros?</h2>
+        <ul>
+            <li><i class="fas fa-chart-line"></i>Oportunidades de crecimiento profesional </li>
+            <li><i class="fas fa-users"></i>Ambiente de trabajo dinámico y colaborativo</li>
+            <li><i class="fas fa-tags"></i>Descuentos exclusivos en nuestros productos</li>
+            <li><i class="fas fa-clock"></i>Flexibilidad de horarios</li>
+            <li><i class="fas fa-graduation-cap"></i>Formación y capacitación constante</li>
+        </ul>
+        <h2>Vacantes Disponibles</h2>
+        <ul>
+            <li><i class="fas fa-store"></i><b>Asesor de ventas</b> – Tiendas físicas en Bogotá, Medellín, Cali y más.</li>
+            <li><i class="fas fa-paint-brush"></i><b>Diseñador gráfico</b> – Trabajo remoto o presencial en nuestra sede principal.</li>
+            <li><i class="fas fa-bullhorn"></i><b>Community Manager</b> – Gestión de redes sociales y creación de contenido.</li>
+            <li><i class="fas fa-chart-pie"></i><b>Asistente de Marketing</b> – Apoyo en la creación de campañas y estrategias de marketing.</li>
+            <li><i class="fas fa-warehouse"></i><b>Logística y almacén</b> – Manejo de inventario y distribución de productos.</li>
+        </ul>
+        <h2>¿Cómo aplicar?</h2>
+        <p>Si estás interesado en alguna de nuestras vacantes, envíanos tu hoja de vida a <i class="fas fa-envelope"></i>empleos@capstore.com con el asunto "<b>Aplicación - [Nombre de la vacante]</b>".</p>
+        <p>También puedes visitar nuestras oficinas o contactarnos al  +57 320 456 7890 para más información.</p>
+    </div>
+    <div id="footer"></div>
+    <script>
+        document.getElementById("header").innerHTML = fetch('/E-commerce_Gorras/pages/header.html').then(res => res.text()).then(data => document.getElementById("header").innerHTML = data);
+        document.getElementById("footer").innerHTML = fetch('/E-commerce_Gorras/pages/footer.html').then(res => res.text()).then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+</body>
+</html>

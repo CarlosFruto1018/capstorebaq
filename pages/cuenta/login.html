@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro - CapStore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/account.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+</head>
+
+<body>
+    <header id="main-header">
+        
+        <div class="container">
+            <div class="header-left">
+                
+                <a href="/E-commerce_Gorras/index.php" class="logo">
+                    <img src="assets/images/logo.png" alt="">
+                    <span>CapStore</span>
+                </a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="hombre.html">Hombres</a></li>
+                        <li><a href="mujeres.html">Mujeres</a></li>
+                        <li><a href="ninos.html">Niños</a></li>
+                        <li><a href="ofertas.html">Ofertas</a></li>
+                        <a href="/E-commerce_Gorras/pages/cuenta/login.html">Iniciar sesión</a>
+
+
+                       
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cart-icon">
+                    <a href="pages/cart.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor__todo">
+            <!-- Cajas traseras -->
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <!-- Formularios -->
+            <div class="contenedor__login-register">
+                <!-- Login -->
+                <form action="login.php" method="POST" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" name="usuario" placeholder="Usuario" required>
+                    <input type="password" name="contrasena" placeholder="Contraseña" required minlength="8">
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <!-- Registro -->
+                <form id="registroForm" class="formulario__register" action="registro.php" method="POST">
+                    <h2>Regístrarse</h2>
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                    <input type="text" name="usuario" placeholder="Usuario" required minlength="4">
+                    <input type="password" name="contrasena" placeholder="Contraseña" required minlength="8">
+                    <button type="submit" id="btnRegistro">Regístrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Comprar</h3>
+                    <ul>
+                        <li><a href="hombre.html">Hombres</a></li>
+                        <li><a href="mujeres.html">Mujeres</a></li>
+                        <li><a href="ninos.html">Niños</a></li>
+                        <li><a href="ofertas.html">Ofertas</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <li><a href="/E-commerce_Gorras/info/contacto.html">Contacto</a></li>
+                        <li><a href="/E-commerce_Gorras/info/envios.html">Envíos</a></li>
+                        <li><a href="/E-commerce_Gorras/info/devoluciones.html">Devoluciones</a></li>
+                        <li><a href="/E-commerce_Gorras/info/faq.html">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="/E-commerce_Gorras/info/nosotros.html"">Sobre nosotros</a></li>
+                        <li><a href="/E-commerce_Gorras/info/tiendas.html"">Nuestras tiendas</a></li>
+                       
+                        <li><a href="/E-commerce_Gorras/info/trabaja.html"">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe nuestras novedades y ofertas exclusivas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email">
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+               
+                <div class="footer-links">
+                    <a href="privacidad.html">Privacidad</a>
+                    <a href="terminos.html">Términos</a>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="../../JS/account.js"></script> <!-- Cierre correcto de la etiqueta script -->
+    
+    
+    <script>
+        document.getElementById("header").innerHTML = fetch('../../header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+document.getElementById("footer").innerHTML = fetch('../../footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
+</body>
+</html>

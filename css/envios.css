@@ -1,0 +1,119 @@
+
+body {
+    background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+}
+
+p{
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+.mapadiv {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+}
+
+.mapadiv path {
+    fill: #3498db; /* Color azul para las zonas */
+    stroke: #8B4513; /* Borde marrón */
+    stroke-width: 2px;
+    transition: all 0.3s ease; /* Transición suave para los efectos */
+    cursor: pointer; /* Cambia el cursor a mano */
+}
+
+/* Efecto hover para las zonas */
+.mapadiv path:hover {
+    fill: #e74c3c; /* Color rojo al pasar el cursor */
+    stroke: #c0392b; /* Borde más oscuro */
+    stroke-width: 3px; /* Borde más grueso */
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.3)); /* Sombra suave */
+}
+
+/* Estilo para el área específica de Nariño (si quieres destacarla) */
+#CONAR, #COSUC, #COATL, #COCAQ, #COANT, #COCUN, #COAMA, #COPUT, #COTOL, #COCOR, #COLAG, #COVAU, #COARA, #COHUI, #COCES, #COCAS, #COGUA, #COMAG, #COBOY, #COQUI, #COSAN {
+    fill: #2ecc71; /* Color verde diferente */
+}
+
+#CONAR:hover, #COSUC:hover, #COATL:hover, #COANT:hover, #COCUN:hover, #COAMA:hover, #COPUT:hover, #COTOL:hover, #COCOR:hover, #COLAG:hover, #COVAU:hover, #COARA:hover, #COHUI:hover, #COCES:hover, #COCAS:hover, #COGUA:hover, #COMAG:hover, #COBOY:hover, #COQUI:hover, #COSAN:hover {
+    fill: #27ae60; /* Verde más oscuro al pasar */
+}
+
+
+
+#SUCRE{
+    fill: #2ecc71;
+}
+
+
+/* Estilo para el tooltip (si usas el título) */
+.mapadiv path[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    pointer-events: none;
+    z-index: 100;
+}
+
+/* Efecto para cuando se hace clic */
+.mapadiv path:active {
+    fill: #9b59b6; /* Color morado al hacer clic */
+    transform: scale(0.98); /* Efecto de "presionado" */
+}
+
+.myButton {
+    background-color: #44c767;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    text-align: center;
+}
+
+.myButton:hover {
+    background-color: #5cbf2a;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/* Contenedor para centrar el botón */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

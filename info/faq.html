@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <link rel="stylesheet" href="../css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="faq">
+    <h1>Preguntas Frecuentes</h1>
+    <h2><i class="fa-solid fa-truck"></i> ¿Cuánto tarda el envío?</h2>
+    <ul>
+        <li>El tiempo de entrega depende de la ubicación. Generalmente, los envíos tardan entre 2 y 5 días hábiles en llegar a las principales ciudades. Para zonas más alejadas, el tiempo puede ser un poco mayor.</li>
+    </ul>
+    <h2><i class="fa-solid fa-credit-card"></i> ¿Qué métodos de pago aceptan?</h2>
+    <ul>
+        <li>Aceptamos tarjetas de crédito, débito, transferencias bancarias y pagos en efectivo en puntos autorizados. Queremos que tu compra sea fácil y segura.</li>
+    </ul>
+    <h2><i class="fa-solid fa-rotate-left"></i> ¿Puedo cambiar o devolver un producto?</h2>
+    <ul>
+        <li>Sí, puedes devolver un producto si no estás satisfecho con tu compra. Consulta nuestra <a href="devoluciones.html">política de devoluciones</a> para más información.</li>
+    </ul>
+    <h2><i class="fa-solid fa-map-marked-alt"></i> ¿Hacen envíos a todo el país?</h2>
+    <ul>
+        <li>Actualmente, cubrimos la mayoría de los departamentos. Si tu zona no está en nuestra cobertura, contáctanos y buscaremos la mejor opción para ti.</li>
+    </ul>
+    <h2><i class="fa-solid fa-phone"></i> ¿Cómo puedo comunicarme con ustedes?</h2>
+    <ul>
+        <li>Puedes escribirnos a nuestro <a href="contacto.html">WhatsApp</a>, enviarnos un correo o llamarnos. Estamos aquí para ayudarte.</li>
+    </ul>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+        document.getElementById("header").innerHTML = fetch('/E-commerce_Gorras/pages/header.html').then(res => res.text()).then(data => document.getElementById("header").innerHTML = data);
+        document.getElementById("footer").innerHTML = fetch('/E-commerce_Gorras/pages/footer.html').then(res => res.text()).then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Excluir archivos y carpetas de XAMPP
+*.log
+*.sql
+*.env
+vendor/
+node_modules/
+.env
+.DS_Store

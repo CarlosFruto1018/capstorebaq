@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoluciones</title>
+    <link rel="stylesheet" href="../css/devoluciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="politicas">
+        <h2>Política de Devoluciones</h2>
+        <p>En CapStore, queremos que estés completamente satisfecho con tu compra. Si por alguna razón no estás conforme con tu pedido, puedes realizar una devolución siguiendo las condiciones y pasos detallados a continuación.</p>
+        <h3>1. Condiciones para la Devolución</h3>
+        <ul>
+            <li>Tienes hasta 30 días naturales desde la fecha de recepción para solicitar una devolución.</li>
+            <li>El producto debe estar en perfecto estado, sin usar, con su embalaje original y todas las etiquetas adheridas.</ñ>
+            <li>No se aceptan devoluciones de productos personalizados, en oferta o de liquidación.</li>
+            <li>Debes presentar el comprobante de compra (factura o recibo electrónico).</li>
+        </ul>
+        <h3>2. Proceso de Devolución</h3>
+        <h4>‎ ‎ ‎ ‎ 1. Solicitud: Envía un correo a [correo@capstore.com] con el asunto "Solicitud de Devolución" y los siguientes datos:</h4>
+        <ul>
+            <li>Nombre completo</li>
+            <li>Número de pedido</li>
+            <li>Motivo de la devolución</li>
+            <li>Fotos del producto en caso de defectos o daños</li>
+        </ul>
+        <h4>‎ ‎ ‎ ‎ 2. Nuestro equipo revisará tu solicitud y te responderá en un plazo de 48 horas hábiles con las instrucciones para el envío del producto.</h4>
+        <h4>‎ ‎ ‎ ‎ 3. Envío: Deberás enviar el producto a la dirección que te proporcionaremos. Los gastos de envío correrán por tu cuenta.</h4>
+        <h4>‎ ‎ ‎ ‎ 4. Inspección: Una vez recibido el producto, nuestro equipo lo inspeccionará para verificar que cumple con las condiciones de devolución.</h4>
+        
+        <h3>3. Cambios</h3>
+        <p>Si deseas cambiar un producto por otra talla, color o modelo, sigue el mismo proceso de devolución y realiza una nueva compra en nuestra tienda online.</p>
+    
+    
+        <h3>4. Productos Defectuosos o Incorrectos</h3>
+        <p>Si recibiste un producto defectuoso o incorrecto, contáctanos de inmediato con fotos del problema. En estos casos, nos haremos cargo de los gastos de devolución y envío del nuevo producto.</p>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        document.getElementById("header").innerHTML = fetch('/E-commerce_Gorras/pages/header.html').then(res => res.text()).then(data => document.getElementById("header").innerHTML = data);
+        document.getElementById("footer").innerHTML = fetch('/E-commerce_Gorras/pages/footer.html').then(res => res.text()).then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+</body>
+</html>

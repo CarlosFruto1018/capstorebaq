@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="quick-contact">
+        <h3>Contacto Rápido</h3>
+        <div class="contact-methods">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <span class="contact-label">Teléfono</span>
+                    <a href="tel:+123456789">+1 234 567 89</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:info@capstore.com">info@capstore.com</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <span class="contact-label">Dirección</span>
+                    <span>Calle Principal 123, Ciudad</span>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    
+    <div id="footer"></div>
+    <script>
+        document.getElementById("header").innerHTML = fetch('/E-commerce_Gorras/pages/header.html').then(res => res.text()).then(data => document.getElementById("header").innerHTML = data);
+        document.getElementById("footer").innerHTML = fetch('/E-commerce_Gorras/pages/footer.html').then(res => res.text()).then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="../css/nosotros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="about">
+    <h1>Sobre Nosotros</h1>
+    <p>En CapStore, creemos que cada compra es más que un simple intercambio: es una experiencia. Desde el primer momento, nuestro objetivo ha sido ofrecer productos de calidad con un servicio confiable, eficiente y cercano. Nos apasiona lo que hacemos y trabajamos cada día para mejorar, innovar y ofrecerte siempre lo mejor.</p>
+    <p>Con más de 10 años de experiencia en el mercado, hemos logrado establecernos como una de las tiendas de gorras más reconocidas en el país. Nuestro compromiso con la calidad, la variedad y la satisfacción del cliente nos ha permitido crecer y expandirnos, llegando a más personas y lugares.</p>
+    <h2><i class="fa-solid fa-building"></i> Nuestra Historia</h2>
+    <p>Nacimos con la misión de hacer que comprar en línea sea sencillo, seguro y accesible para todos. Con el tiempo, hemos crecido gracias a la confianza de nuestros clientes, expandiendo nuestra cobertura y mejorando nuestros procesos logísticos para garantizar envíos rápidos y eficientes a cada rincón del país.</p>
+    <p>En CapStore, no solo vendemos gorras: creamos experiencias. Cada producto que ofrecemos ha sido seleccionado cuidadosamente para garantizar su calidad, diseño y durabilidad. Nos esforzamos por brindarte un servicio personalizado, atento y amable, para que te sientas cómodo y seguro en cada compra.</p>
+    <h2><i class="fa-solid fa-bullseye"></i> Nuestra Filosofía</h2>
+    <h4>Nos guiamos por tres pilares fundamentales:</h4>
+    <ul>
+        <li><b>Calidad en cada detalle</b> – Seleccionamos cuidadosamente nuestros productos para asegurarnos de que cumplen con los más altos estándares.</li>
+        <li><b>Envíos rápidos y seguros</b> –Trabajamos con los mejores aliados logísticos para que tus pedidos lleguen a tiempo y en perfectas condiciones.</li>
+        <li><b>Atención personalizada</b> – Para nosotros, cada cliente es único. Estamos aquí para resolver tus dudas y ayudarte en cada paso de tu compra.</li>
+    </ul>
+
+    <h2><i class="fa-solid fa-map-location-dot"></i> Nuestra Cobertura</h2>
+    <p>Sabemos lo importante que es recibir tus productos sin complicaciones. Actualmente, realizamos envíos a la mayoría de los departamentos del país, y seguimos ampliando nuestra cobertura para llegar a más zonas. Si por alguna razón tu ubicación aún no está dentro de nuestras rutas, ¡no te preocupes! Nuestro equipo buscará una solución para que recibas tu pedido de la mejor manera posible.</p>
+    <p>Si tienes alguna pregunta o inquietud, no dudes en contactarnos. Estamos aquí para ayudarte y hacer que tu experiencia de compra sea excepcional.</p>
+    <h2><i class="fa-solid fa-handshake"></i> Nuestro Compromiso</h2>
+    <p>En CapStore, nos comprometemos a ofrecerte la mejor experiencia de compra en línea. Trabajamos con pasión, dedicación y responsabilidad para cumplir con tus expectativas y superarlas. Tu satisfacción es nuestra prioridad, y haremos todo lo posible para que te sientas satisfecho con tu compra.</p>
+    💙 Gracias por ser parte de nuestra historia. Estamos aquí para ti, hoy y siempre.
+    </div>
+
+    <div id="footer"></div>
+    <script>
+        document.getElementById("header").innerHTML = fetch('/E-commerce_Gorras/pages/header.html').then(res => res.text()).then(data => document.getElementById("header").innerHTML = data);
+        document.getElementById("footer").innerHTML = fetch('/E-commerce_Gorras/pages/footer.html').then(res => res.text()).then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+</body>
+</html>
